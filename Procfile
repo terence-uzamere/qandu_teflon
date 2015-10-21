@@ -1,0 +1,1 @@
+web: gunicorn qandu_teflon.wsgi --log-file -
