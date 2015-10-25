@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Terence U.- The question-and-answer website for All Things Terence!</title>
+    <title>Terence U.- The only website for All Things Terence!</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <link href="{% static "css/bootstrap.min2.css" %}" rel="stylesheet">
     <link href="{% static "css/base.css" %}" rel="stylesheet">
@@ -23,11 +23,11 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="{% url 'question_create' %}">Submit Question</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Photos</a></li>
-            <li><a href="#">Bio</a></li>
-            <li><a href="#">Accomplishments</a></li>
+           {% if user.is_authenticated %}
+            <li><a href="{% url 'auth_logout' %}">Logout</a></li>
+            {% else %}
+            <li><a href="{% url 'auth_login' %}">Login</a></li>
+            {% endif %}
           </ul>
         </div>
       </div>

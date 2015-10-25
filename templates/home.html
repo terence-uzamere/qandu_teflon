@@ -1,8 +1,22 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="jumbotron">
-  <h1>Welcome to Terence U.</h1>
-  <p>To hear my thoughts! Please Ask A Question.</p>
-  <p><a href="{% url 'question_create' %}" class="btn btn-lg btn-primary">Submit Question</a></p>
+  <h1><center>Welcome to Terence U.</h1>
+  <p><center>To hear my thoughts! Contact Me.</p>
+  <p><center><a href="{% url 'question_create' %}" class="btn btn-lg btn-primary">Submit Question</a></p>
+  <p><a class="btn btn-lg btn-primary" href="{% url 'registration_register' %}">Sign Up</a></p>
 </div>
+<div class="container">
+      <!-- Example row of columns -->
+      <div class="col-md-4">
+          <h2>About Me</h2>
+          <p>Hi Everyone! This is Terence! And this is my website! Feel free to contact at any time. Dueces! </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Accomplishments</h2>
+          <p>Being a Bobcat is the best accomplishment of my life so far. In May 2016, I will be graduating from Quinnipiac University</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
 {% endblock %}
