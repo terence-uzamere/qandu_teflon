@@ -1,22 +1,24 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="jumbotron">
-  <h1><center>Welcome to Terence U.</h1>
-  <p><center>To hear my thoughts! Contact Me.</p>
-  <p><center><a href="{% url 'question_create' %}" class="btn btn-lg btn-primary">Submit Question</a></p>
-  <p><a class="btn btn-lg btn-primary" href="{% url 'registration_register' %}">Sign Up</a></p>
+  <h1><center>Terence Uzamere</h1>
+  <p><center>Quinnipiac University Class of 2016</p>
+  <p><center><a href="{% url 'contact_form' %}" class="btn btn-lg btn-primary">Contact Me</a></p>
 </div>
 <div class="container">
       <!-- Example row of columns -->
       <div class="col-md-4">
           <h2>About Me</h2>
-          <p>Hi Everyone! This is Terence! And this is my website! Feel free to contact at any time. Dueces! </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
+          <p>Hello Everyone! My name is Terence! I am a senior Computer Information Systems major at Quinnipiac University. I am an aspiring analyst/consultant. On my free time, I enjoy working out and hanging out with my friends. </p>
+      </div>
         <div class="col-md-4">
           <h2>Accomplishments</h2>
-          <p>Being a Bobcat is the best accomplishment of my life so far. In May 2016, I will be graduating from Quinnipiac University</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p>In May 2016, I will be graduating from Quinnipiac University!</p>
         </div>
-      </div>
+        <div class="col-md-4">
+          <h2>Acknowledgement</h2>
+          <p>I would like to thank Professor Guido Lang for inspiring me to create this page.</p>
+  </div>
+</div>
+</div>
 {% endblock %}

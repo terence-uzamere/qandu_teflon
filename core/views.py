@@ -6,14 +6,14 @@ from .models import *
 # Create your views here.
 class Home(TemplateView):
   template_name = 'home.html'
-  
+
 class ContactCreateView(CreateView):
-  model = Contact
+  model = ContactForm
   template_name = "question/question_form.html"
-  fields = ['title', 'description']
+  fields = ['first_name', 'last_name', 'email_Address', 'message']
   success_url = reverse_lazy('success')
-  
+
+
 class Success(TemplateView):
   template_name = "success.html"
-  
-  
+
