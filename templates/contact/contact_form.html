@@ -4,9 +4,10 @@
 <div class="row">
   <div class="col-lg-6">
     <form method="post" action="">
-      {% csrf_token %}
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-  </div>
+  {% csrf_token %}
+  {% bootstrap_form form %}
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
 </div>
 {% endblock %}
